@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fdf8f3;
+      color: #333;
+      background: linear-gradient(135deg, #ffffff, #3b82f6);
+
+    }
+
+    .contact-section {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .contact-section h3 {
+      font-size: 22px;
+      color: #0066ff;
+      margin-bottom: 10px;
+    }
+
+    .contact-section p {
+      color: #777;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .form-group {
+      flex: 1 1 45%;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .form-group-full {
+      flex: 1 1 100%;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input, textarea {
+      border: none;
+      border-bottom: 2px solid #141212;
+      background: transparent;
+      padding: 10px;
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #1e90ff;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .submit-btn {
+      border: 2px solid #1e90ff;
+      background-color: transparent;
+      color: #1e90ff;
+      font-size: 16px;
+      padding: 10px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      margin-top: 20px;
+    }
+
+    .submit-btn:hover {
+      background-color: #1e90ff;
+      color: white;
+    }
+
+    .contact-footer {
+      margin-top: 40px;
+      font-size: 18px;
+      color: #555;
+    }
+
+    .contact-footer a {
+      color: #1e90ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact-footer a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+  <section class="contact-section">
+    <h2>Contact Me</h2>
+    <h3><a href="mailto:sarithabisai9494@gmail.com">sarithabisai9494@gmail.com</a></h3>
+    <p>Feel free to contact me with any inquiries or questions!</p>
+
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" placeholder="Your Name" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input id="email" type="email" name="email" placeholder="Your Email" />
+      </div>
+
+      <div class="form-group form-group-full">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message..."></textarea>
+      </div>
+
+      <div class="form-group form-group-full" style="text-align: center;">
+        <input type="submit" value="Submit" class="submit-btn" />
+      </div>
+    </form>
+
+    <div class="contact-footer">
+      <p> Bhimavaram, West Godavari District, Andhra Pradesh</p>
+    </div>
+  </section>
+
+</body>
+</html>

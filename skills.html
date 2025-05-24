@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Skills</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: white;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffffff, #3b82f6);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      color: black;
+      background-color:blue;
+      padding: 10px;
+      border-radius: 10px;
+      color: black;
+      margin-bottom: 30px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-card {
+      background-color:white;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: scale(1.05);
+    }
+
+    .skill-card h3 {
+      margin: 10px 0;
+      color: #1565c0;
+    }
+
+    .skill-card p {
+      color: #333;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>HTML</h3>
+        <p>Semantic structure and modern layout techniques.</p>
+      </div>
+      <div class="skill-card">
+        <h3>CSS</h3>
+        <p>Flexbox, Grid, animations, responsive design.</p>
+      </div>
+      <div class="skill-card">
+        <h3>JavaScript</h3>
+        <p>DOM manipulation, ES6+, event handling.</p>
+      </div>
+      <div class="skill-card">
+        <h3>React.js</h3>
+        <p>Components, props, state management.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Python</h3>
+        <p>Scripting, data handling, file I/O.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Java</h3>
+        <p>OOP concepts, console apps.</p>
+      </div>
+      <div class="skill-card">
+        <h3>C / C++</h3>
+        <p>Logic building, memory management.</p>
+      </div>
+      <div class="skill-card">
+        <h3>UI/UX Design</h3>
+        <p>Figma, wireframes, prototyping.</p>
+      </div>
+      <div class="skill-card">
+        <h3>DSA</h3>
+        <p>Sorting Tech, Algorithms, ProblemSolving.</p>
+      </div>
+      <div class="skill-card">
+        <h3>SQL</h3>
+        <p>DataBase, Relations,Queries, NestedQueries</p>
+      </div>
+      <div class="skill-card">
+        <h3>Tools</h3>
+        <p>VS Code, Jupyter, Linux, Git, GitHub.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
