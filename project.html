@@ -1,117 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Projects</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: white;
-      color: black;
-      background: linear-gradient(135deg, #ffffff, #3b82f6);
-    }
-
-    section {
-      padding: 60px 40px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    h2 {
-      text-align: center;
-      font-size: 36px;
-      background-color: blue;
-      color: white;
-      padding: 15px 0;
-      border-radius: 10px;
-      margin-bottom: 40px;
-    }
-
-    .project-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 30px;
-    }
-
-    .project {
-      flex: 1 1 calc(33% - 30px);
-      background-color: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .project:hover {
-      transform: translateY(-5px);
-    }
-
-    .project h3 {
-      margin-top: 10px;
-      font-size: 20px;
-      font-weight: bold;
-      color: #1565c0;
-    }
-
-    .project p {
-      margin-top: 10px;
-      font-size: 15px;
-      color: #333;
-    }
-
-    @media (max-width: 900px) {
-      .project {
-        flex: 1 1 100%;
-      }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Saritha</title>
+  <link rel="stylesheet" href="saritha.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-
-  <section>
-    <h2>My Projects</h2>
-    <div class="project-grid">
-      
-      <div class="project">
-        <h3>Rock Paper Scissor <br> Using Python</h3>
-        <p>
-          A Python-based console game where the user competes against the computer using random moves.
-        </p>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html">Saritha</a>
       </div>
-
-      <div class="project">
-        <h3>Currency Converter <br> Using Java</h3>
-        <p>
-          A Java program that converts USD to INR, EUR, GBP, and JPY using fixed exchange rates in a CLI.
-        </p>
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="project.html" class="nav-link active">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
       </div>
-
-      <div class="project">
-        <h3>Online Learning Platform <br> Using HTML CSS JS</h3>
-        <p>
-          A frontend-based learning portal with course details, videos, roadmaps, and gamification using HTML, CSS, and JavaScript.
-        </p>
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
+    </div>
+  </nav>
 
-      <div class="project">
-        <h3>SkillSphere <br> Using Figma</h3>
-        <p>
-          SkillSphere is a modern, user-friendly online learning platform UI designed in Figma. It offers an engaging experience for students to browse, enroll, and learn from various tech courses.
-        </p>
+  <!-- Projects Hero Section -->
+  <section class="projects-hero">
+    <div class="container">
+      <div class="projects-hero-content">
+        <h1>My Projects</h1>
+        <p>Some of my recent work</p>
       </div>
-
-      <div class="project">
-        <h3>BankEase <br> Using SQL Database</h3>
-        <p>
-          BankEase is a database-driven Bank Management System designed to manage core banking operations like customer accounts, transactions, and balances.
-        </p>
-      </div>
-
     </div>
   </section>
 
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">A showcase of my recent work</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src=
+              alt="Rock Paper Scissor">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Rock Paper Scissor</h3>
+            <p>A Python-based console game where the user competes against the computer using random moves. Features
+              user input validation and score tracking.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Console App</span>
+            </div>
+            <div class="project-features">
+              <ul>
+                <li>Random move generation</li>
+                <li>Score tracking</li>
+                <li>User input validation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/400x300/dc2626/ffffff?text=Learning+Platform"
+              alt="Online Learning Platform">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Online Learning Platform</h3>
+            <p>A frontend-based learning portal with course details, videos, roadmaps, and gamification using HTML, CSS,
+              and JavaScript.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-features">
+              <ul>
+                <li>Course management</li>
+                <li>Video integration</li>
+                <li>Learning roadmaps</li>
+                <li>Gamification elements</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/400x300/7c3aed/ffffff?text=SkillSphere" alt="SkillSphere">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Tic Tac Toe</h3>
+            <p>Tic-Tac-Toe is a classic two-player strategy game where players take turns marking X or O on a 3×3 grid.
+              The goal is to be the first to align three of your symbols horizontally, vertically, or diagonally.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-features">
+              <ul>
+                <li>Two-Player Gameplay</li>
+                <li>Winner Detection System</li>
+                <li>Reset & New Game Options</li>
+                <li>Interactive UI</li>
+                <li>Responsive & Fast</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/400x300/0891b2/ffffff?text=BankEase" alt="BankEase">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>BankEase</h3>
+            <p>BankEase is a database-driven Bank Management System designed to manage core banking operations like
+              customer accounts, transactions, and balances.</p>
+            <div class="project-tech">
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Database</span>
+            </div>
+            <div class="project-features">
+              <ul>
+                <li>Customer account management</li>
+                <li>Transaction processing</li>
+                <li>Balance tracking</li>
+                <li>Database optimization</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/400x300/ea580c/ffffff?text=Portfolio+Website" alt="Portfolio Website">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Personal Portfolio</h3>
+            <p>A responsive portfolio website showcasing my skills, projects, and experience. Built with modern web
+              technologies and best practices.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-features">
+              <ul>
+                <li>Responsive design</li>
+                <li>Interactive animations</li>
+                <li>Contact form</li>
+                <li>Project showcase</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Categories -->
+  <section class="project-categories">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Project Categories</h2>
+        <p class="section-subtitle">Different types of projects I work on</p>
+      </div>
+      <div class="categories-grid">
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Web Development</h3>
+          <p>Frontend and backend web applications using modern technologies</p>
+          <div class="category-count">5 Projects</div>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Programming</h3>
+          <p>Console applications and algorithms in various languages</p>
+          <div class="category-count">4 Projects</div>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Database</h3>
+          <p>Database design and management systems</p>
+          <div class="category-count">2 Projects</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Interested in My Work?</h2>
+        <p>Let's discuss how we can work together on your next project</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+          <a href="skills.html" class="btn btn-secondary">View My Skills</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          <p>&copy; 2024 Saritha. All rights reserved.</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/Saritha1428" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/Saritha-Bisai" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://leetcode.com/u/Saritha__bisai--1428" target="_blank" class="social-link">
+            <i class="fas fa-code"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="saritha.js"></script>
 </body>
+
 </html>

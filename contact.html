@@ -1,152 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #fdf8f3;
-      color: #333;
-      background: linear-gradient(135deg, #ffffff, #3b82f6);
-
-    }
-
-    .contact-section {
-      max-width: 800px;
-      margin: 60px auto;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .contact-section h2 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    .contact-section h3 {
-      font-size: 22px;
-      color: #0066ff;
-      margin-bottom: 10px;
-    }
-
-    .contact-section p {
-      color: #777;
-      font-size: 16px;
-      margin-bottom: 30px;
-    }
-
-    form {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .form-group {
-      flex: 1 1 45%;
-      display: flex;
-      flex-direction: column;
-      text-align: left;
-    }
-
-    .form-group-full {
-      flex: 1 1 100%;
-    }
-
-    label {
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-
-    input, textarea {
-      border: none;
-      border-bottom: 2px solid #141212;
-      background: transparent;
-      padding: 10px;
-      font-size: 16px;
-      outline: none;
-      transition: border-color 0.3s;
-    }
-
-    input:focus, textarea:focus {
-      border-color: #1e90ff;
-    }
-
-    textarea {
-      resize: vertical;
-      min-height: 100px;
-    }
-
-    .submit-btn {
-      border: 2px solid #1e90ff;
-      background-color: transparent;
-      color: #1e90ff;
-      font-size: 16px;
-      padding: 10px 25px;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-      margin-top: 20px;
-    }
-
-    .submit-btn:hover {
-      background-color: #1e90ff;
-      color: white;
-    }
-
-    .contact-footer {
-      margin-top: 40px;
-      font-size: 18px;
-      color: #555;
-    }
-
-    .contact-footer a {
-      color: #1e90ff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .contact-footer a:hover {
-      text-decoration: underline;
-    }
-
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Saritha</title>
+  <link rel="stylesheet" href="saritha.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-
-  <section class="contact-section">
-    <h2>Contact Me</h2>
-    <h3><a href="mailto:sarithabisai9494@gmail.com">sarithabisai9494@gmail.com</a></h3>
-    <p>Feel free to contact me with any inquiries or questions!</p>
-
-    <form>
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input id="name" type="text" name="name" placeholder="Your Name" />
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html">Saritha</a>
       </div>
-
-      <div class="form-group">
-        <label for="email">Email Address</label>
-        <input id="email" type="email" name="email" placeholder="Your Email" />
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="project.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
       </div>
-
-      <div class="form-group form-group-full">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Write your message..."></textarea>
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
+    </div>
+  </nav>
 
-      <div class="form-group form-group-full" style="text-align: center;">
-        <input type="submit" value="Submit" class="submit-btn" />
+  <!-- Contact Hero Section -->
+  <section class="contact-hero">
+    <div class="container">
+      <div class="contact-hero-content">
+        <h1>Get In Touch</h1>
+        <p>Let's work together</p>
       </div>
-    </form>
-
-    <div class="contact-footer">
-      <p> Bhimavaram, West Godavari District, Andhra Pradesh</p>
     </div>
   </section>
 
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">I'm always interested in new opportunities</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Let's talk about your project</h3>
+          <p>I'm interested in freelance opportunities. However, if you have other request or question, don't hesitate
+            to contact me</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Email</h4>
+                <p>sarithabisai9494@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Location</h4>
+                <p>Bhimavaram, West Godavari District, Andhra Pradesh</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Phone</h4>
+                <p>Available upon request</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <h4>Follow Me</h4>
+            <div class="social-buttons">
+              <a href="https://github.com/Saritha1428" target="_blank" class="social-btn">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com/in/Saritha-Bisai" target="_blank" class="social-btn">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://leetcode.com/u/Saritha__bisai--1428" target="_blank" class="social-btn">
+                <i class="fas fa-code"></i>
+                <span>LeetCode</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i>
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Methods Section -->
+  <section class="contact-methods">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Other Ways to Reach Me</h2>
+        <p class="section-subtitle">Choose your preferred method</p>
+      </div>
+      <div class="methods-grid">
+        <div class="method-card">
+          <div class="method-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3>Email</h3>
+          <p>For project inquiries and collaborations</p>
+          <a href="mailto:sarithabisai9494@gmail.com" class="method-link">sarithabisai9494@gmail.com</a>
+        </div>
+
+        <div class="method-card">
+          <div class="method-icon">
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <h3>LinkedIn</h3>
+          <p>Professional networking and updates</p>
+          <a href="https://linkedin.com/in/Saritha-Bisai" target="_blank" class="method-link">Connect with me</a>
+        </div>
+
+        <div class="method-card">
+          <div class="method-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <h3>GitHub</h3>
+          <p>View my code and contributions</p>
+          <a href="https://github.com/Saritha1428" target="_blank" class="method-link">Check my repos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Quick answers to common questions</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>What services do you offer?</h3>
+          <p>I offer web development, UI/UX design, and programming services. I specialize in frontend development using
+            HTML, CSS, JavaScript, and React.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How long does a project take?</h3>
+          <p>Project timeline depends on complexity. Simple websites take 1-2 weeks, while complex applications may take
+            1-2 months.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do you work with students?</h3>
+          <p>Yes! As a student myself, I understand the needs of student projects and offer competitive rates for
+            academic work.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What's your availability?</h3>
+          <p>I'm available for part-time projects and freelance work. I can work around my academic schedule.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Start Your Project?</h2>
+        <p>Let's discuss your ideas and bring them to life</p>
+        <div class="cta-buttons">
+          <a href="mailto:sarithabisai9494@gmail.com" class="btn btn-primary">Send Email</a>
+          <a href="project.html" class="btn btn-secondary">View My Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          <p>&copy; 2024 Saritha. All rights reserved.</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/Saritha1428" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/Saritha-Bisai" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://leetcode.com/u/Saritha__bisai--1428" target="_blank" class="social-link">
+            <i class="fas fa-code"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="saritha.js"></script>
 </body>
+
 </html>
