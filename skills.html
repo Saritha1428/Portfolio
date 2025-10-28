@@ -1,119 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Skills</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: white;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #ffffff, #3b82f6);
-    }
-
-    section {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 30px;
-      background-color: white;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    h2 {
-      text-align: center;
-      font-size: 32px;
-      color: black;
-      background-color:blue;
-      padding: 10px;
-      border-radius: 10px;
-      color: black;
-      margin-bottom: 30px;
-    }
-
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 20px;
-    }
-
-    .skill-card {
-      background-color:white;
-      border-radius: 12px;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
-    }
-
-    .skill-card:hover {
-      transform: scale(1.05);
-    }
-
-    .skill-card h3 {
-      margin: 10px 0;
-      color: #1565c0;
-    }
-
-    .skill-card p {
-      color: #333;
-      font-size: 14px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills - Saritha</title>
+  <link rel="stylesheet" href="saritha.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
 
-  <section id="skills">
-    <h2>My Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h3>HTML</h3>
-        <p>Semantic structure and modern layout techniques.</p>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html">Saritha</a>
       </div>
-      <div class="skill-card">
-        <h3>CSS</h3>
-        <p>Flexbox, Grid, animations, responsive design.</p>
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="skills.html" class="nav-link active">Skills</a>
+        <a href="project.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
       </div>
-      <div class="skill-card">
-        <h3>JavaScript</h3>
-        <p>DOM manipulation, ES6+, event handling.</p>
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-      <div class="skill-card">
-        <h3>React.js</h3>
-        <p>Components, props, state management.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Python</h3>
-        <p>Scripting, data handling, file I/O.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Java</h3>
-        <p>OOP concepts, console apps.</p>
-      </div>
-      <div class="skill-card">
-        <h3>C / C++</h3>
-        <p>Logic building, memory management.</p>
-      </div>
-      <div class="skill-card">
-        <h3>UI/UX Design</h3>
-        <p>Figma, wireframes, prototyping.</p>
-      </div>
-      <div class="skill-card">
-        <h3>DSA</h3>
-        <p>Sorting Tech, Algorithms, ProblemSolving.</p>
-      </div>
-      <div class="skill-card">
-        <h3>SQL</h3>
-        <p>DataBase, Relations,Queries, NestedQueries</p>
-      </div>
-      <div class="skill-card">
-        <h3>Tools</h3>
-        <p>VS Code, Jupyter, Linux, Git, GitHub.</p>
+    </div>
+  </nav>
+
+  <!-- Skills Hero Section -->
+  <section class="skills-hero">
+    <div class="container">
+      <div class="skills-hero-content">
+        <h1>My Skills</h1>
+        <p>Technologies I work with</p>
       </div>
     </div>
   </section>
 
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h3>HTML</h3>
+          <p>Semantic structure and modern layout techniques.</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h3>CSS</h3>
+          <p>Flexbox, Grid, animations, responsive design.</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <h3>JavaScript</h3>
+          <p>DOM manipulation, ES6+, event handling.</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fab fa-react"></i>
+          </div>
+          <h3>React.js</h3>
+          <p>Components, props, state management.</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fab fa-python"></i>
+          </div>
+          <h3>Python</h3>
+          <p>Scripting, data handling, file I/O.</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fab fa-java"></i>
+          </div>
+          <h3>Java</h3>
+          <p>OOP concepts, console apps.</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fas fa-c"></i>
+          </div>
+          <h3>C</h3>
+          <p>Logic building, memory management.</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>DSA</h3>
+          <p>Sorting techniques, algorithms, problem solving.</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>SQL</h3>
+          <p>Databases, relations, queries, nested queries.</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3>Tools</h3>
+          <p>VS Code, Jupyter, Linux, Git, GitHub.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          <p>&copy; 2024 Saritha. All rights reserved.</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/Saritha1428" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/Saritha-Bisai" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://leetcode.com/u/Saritha__bisai--1428" target="_blank" class="social-link">
+            <i class="fas fa-code"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="saritha.js"></script>
 </body>
+
 </html>
